@@ -21,8 +21,12 @@ OFX_OCULUSRIFT_LIBS = "$(ADDONS_PATH)/ofxOculusDK2/libs/LibOVR/Lib/MacOS/Release
 OF_ADDON_HEADERS = $(OFX_OCULUSRIFT_HEADERS)
 OF_ADDON_LIBS = $(OFX_OCULUSRIFT_LIBS)
 
+//HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS) "../../../addons/ofxOsc/libs/oscpack/src"
+
+
 ///////////////////////////////////////////
 // MAIN
 
-HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS) $(OF_ADDON_HEADERS)
+HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS) $(OF_ADDON_HEADERS) "../../../addons/ofxOsc/libs/oscpack/src"
+
 OTHER_LDFLAGS = $(OF_CORE_LIBS) $(OF_ADDON_LIBS)
